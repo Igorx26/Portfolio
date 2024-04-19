@@ -10,22 +10,22 @@ const icons = document.querySelectorAll('.toggle-icon i')
 const darkContainer = document.querySelector('#dark-container')
 const darkContainerImg = document.querySelector('#dark-container .home-img img')
 
-darkContainerImg.src = './Imgs/imgDark.png'
+darkContainerImg.src = '/Imgs/imgDark.png'
 
 toggleIcons.forEach(toggle => {
-    toggle.addEventListener('click', () => {
+  toggle.addEventListener('click', () => {
 
-        toggle.classList.add('disabled')
-        setTimeout(() => {
-            toggle.classList.remove('disabled')
-        }, 1500)
+    toggle.classList.add('disabled')
+    setTimeout(() => {
+      toggle.classList.remove('disabled')
+    }, 1500)
 
-        icons.forEach(icon => {
-            icon.classList.toggle('bx-sun')
-        })
-
-        container.classList.toggle('active')
-        darkContainer.classList.toggle('active')
-
+    icons.forEach(icon => {
+      icon.classList.toggle('bx-sun')
     })
+
+    container.classList.toggle('active')
+    darkContainer.classList.toggle('active')
+
+  })
 })

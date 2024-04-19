@@ -1,58 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio IMS</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div class="container active" id="container">
-        <header class="header">
-            <a href="#" class="logo">Igor.</a>
+      <header class="header">
+        <a href="#home" class="logo">Igor.</a>
 
-            <nav class="navbar">
-                <a href="#" class="active">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Habilidades</a>
-                <a href="#">Portfólio</a>
-                <a href="#">Contatos</a>
-            </nav>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
-            <div class="toggle-icon">
-                <i class='bx bx-moon'></i>
-            </div>
-        </header>
+        <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#portifolio">Portfólio</a>
+          <a href="#contatos">Contatos</a>
+        </nav>
 
-        <section class="home">
-            <div class="home-content">
-                <h3>Olá, sou</h3>
-                <h1>Igor Martins Silva</h1>
-                <h3>E eu sou um <span>Desenvolvedor Web</span></h3>
-                <p>
-                    Blablab lablablaBlablablabla blaBlablablablablaBlablablab lablaBlabla blablablaBlablab
-                </p>
+        <div class="toggle-icon">
+          <i class="bx bx-moon"></i>
+        </div>
+      </header>
 
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/igorms12"><i class='bx bxl-linkedin'></i></a>
-                </div>
+      <!-- home section -->
+      <section class="home" id="home">
+        <div class="home-content">
+          <h3>Olá, sou</h3>
+          <h1>Igor Martins Silva</h1>
+          <h3>E eu sou um <span>Desenvolvedor Frontend</span></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            dolorem ea cum praesentium? Dolor suscipit vitae ea?
+          </p>
 
-                <a href="#" class="btn">Download CV</a>
-            </div>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/igorms12" target="_blank"
+              ><i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://wa.me/5527995167790" target="_blank"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
+          </div>
+          <a href="#" class="btn">Download CV</a>
+        </div>
 
-            <div class="home-img">
-                <img src="./Imgs/imgLight.png">
-            </div>
-        </section>
+        <div class="home-img">
+          <img src="/Imgs/imgLight.png" />
+        </div>
+      </section>
+
+      <!-- sobre section -->
+      <section class="sobre" id="sobre">
+        <div class="sobre-img">
+          <img src="Imgs/sobre.jpg" alt="Sobre" />
+        </div>
+
+        <div class="sobre-content">
+          <h2 class="heading">Sobre <span>Mim</span></h2>
+          <h3>Desenvolvedor Frontend</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            deleniti nesciunt est ad rem dicta modi esse quaerat, officia
+            nostrum culpa perferendis iste, error sunt voluptatibus? Tempore
+            unde ab ducimus?
+          </p>
+          <a href="#" class="btn">Saiba mais</a>
+        </div>
+      </section>
+
+      <!-- habilidades section -->
+      <section class="habilidades" id="habilidades">
+        <h2 class="heading">Minhas <span>Habilidades</span></h2>
+
+        <div class="habilidades-container">
+          <div class="habilidades-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Frontend</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio architecto quia deleniti quibusdam repellat, cumque
+              unde blanditiis aliquam commodi molestias!
+            </p>
+            <a href="#" class="btn">Saiba Mais</a>
+          </div>
+
+          <div class="habilidades-box">
+            <i class="bx bxs-paint"></i>
+            <h3>Design Gráfico</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio architecto quia deleniti quibusdam repellat, cumque
+              unde blanditiis aliquam commodi molestias!
+            </p>
+            <a href="#" class="btn">Saiba Mais</a>
+          </div>
+
+          <div class="habilidades-box">
+            <i class="bx bx-bar-chart-alt"></i>
+            <h3>Marketing Digital</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio architecto quia deleniti quibusdam repellat, cumque
+              unde blanditiis aliquam commodi molestias!
+            </p>
+            <a href="#" class="btn">Saiba Mais</a>
+          </div>
+        </div>
+      </section>
     </div>
 
-
-    <script src="script.js"></script>
-</body>
-
+    <script src="/js/script.js"></script>
+  </body>
 </html>
