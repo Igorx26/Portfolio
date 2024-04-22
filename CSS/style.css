@@ -43,11 +43,21 @@ html {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
-.logo {
+#container .logo {
   font-size: 3rem;
-  color: #333;
+  color: #f0f3fd;
   font-weight: 600;
   cursor: default;
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: #333; /* cor da borda */
+}
+
+#dark-container .logo {
+  font-size: 3rem;
+  font-weight: 600;
+  cursor: default;
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: transparent; /* cor da borda */
 }
 
 .navbar a {
