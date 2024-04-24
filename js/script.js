@@ -1,4 +1,5 @@
 const container = document.querySelector('.container')
+const div = document.querySelector("div")
 
 const cloneContainer = container.cloneNode(true)
 cloneContainer.id = 'dark-container'
@@ -20,6 +21,7 @@ toggleIcons.forEach(toggle => {
       toggle.classList.remove('disabled')
     }, 2500)
 
+    
     icons.forEach(icon => {
       icon.classList.toggle('bx-sun')
     })
@@ -27,9 +29,27 @@ toggleIcons.forEach(toggle => {
     container.classList.toggle('active')
     darkContainer.classList.toggle('active')
 
+    //localstorage
+    if (container.classList.contains('active')) {
+      localStorage.setItem('theme', JSON.stringify('light'))
+    } else {
+      localStorage.setItem('theme', JSON.stringify('dark'))
+    }
   })
-
 })
+
+//localstorage
+getTheme = JSON.parse(localStorage.getItem('theme'))
+
+if (getTheme === 'dark') {
+  container.classList.remove('active')
+  darkContainer.classList.add('active')
+
+  icons.forEach(icon => {
+    icon.classList.toggle('bx-sun')
+  })
+  
+}
 
 // toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon')
@@ -102,3 +122,4 @@ const typeds = new Typed('#dark-container .multiple-text', {
   backDelay: 1000,
   loop: true
 })
+
