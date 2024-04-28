@@ -61,7 +61,7 @@ html {
 }
 
 .navbar a {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #333;
   font-weight: 500;
   margin-left: 4rem;
@@ -268,6 +268,48 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+.formacoes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;  
+}
+
+.formacoes-container .formacoes-content {
+  flex: 1 1 30rem;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  border: 0.2rem solid transparent;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.066);
+  min-height: 70vh;
+}
+
+.formacoes-container .formacoes-content:hover {
+  border-color: #37a1f2;
+  transform: scale(1.02);
+}
+
+.formacoes-content h3 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.formacoes-content h3:nth-of-type(2) {
+  margin-top: 3rem;
+}
+
+.formacoes-content h4 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.formacoes-content h5 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 #dark-container .habilidades-container .habilidades-box {
