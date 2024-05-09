@@ -60,6 +60,14 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active')
 }
 
+let darkMenuIcon = document.querySelector('#dark-container #menu-icon')
+let darkNavbar = document.querySelector('#dark-container .navbar')
+
+darkMenuIcon.onclick = () => {
+  darkMenuIcon.classList.toggle('bx-x')
+  darkNavbar.classList.toggle('active')
+}
+
 
 // Destaque nav onscroll
 
@@ -91,6 +99,8 @@ window.onscroll = () => {
   // remove toggle icon and navbar when click navbar link (scroll)
   menuIcon.classList.remove('bx-x')
   navbar.classList.remove('active')
+  darkMenuIcon.classList.remove('bx-x')
+  darkNavbar.classList.remove('active')
 }
 
 // scroll reveal
@@ -102,7 +112,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .habilidades-container, .portfolio-box, .contatos form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .habilidades-container, .portfolio-box, .formacoes', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .sobre-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .sobre-content', { origin: 'right' });
 
