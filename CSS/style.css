@@ -117,7 +117,6 @@ span {
   color: #37a1f2;
 }
 
-
 .home-content p {
   font-size: 2rem;
 }
@@ -280,6 +279,7 @@ span {
 }
 
 .formacoes h2 {
+  margin-top: 7rem;
   margin-bottom: 3rem;
 }
 
@@ -339,7 +339,6 @@ span {
   z-index: -1;
   transition: 0.5s;
 }
-
 
 #dark-container .formacoes-content .content::before {
   content: "";
