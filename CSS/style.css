@@ -70,7 +70,7 @@ html {
 
 .navbar a:hover,
 .navbar a.destaque {
-  color: #37a1f2;
+  color: #2563eb;
 }
 
 #menu-icon {
@@ -114,7 +114,7 @@ section {
 }
 
 span {
-  color: #37a1f2;
+  color: #2563eb;
 }
 
 .home-content p {
@@ -145,37 +145,37 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid #37a1f2;
+  border: 0.2rem solid #2563eb;
   border-radius: 50%;
   font-size: 2.3rem;
-  color: #37a1f2;
+  color: #2563eb;
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 
 .social-media a:hover {
-  background: #37a1f2;
+  background: #2563eb;
   color: #f0f3fd;
-  box-shadow: 0 0 1rem #37a1f2;
+  box-shadow: 0 0 1rem #2563eb;
 }
 
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: #37a1f2;
-  border: 0.125rem solid #37a1f2;
+  background: #2563eb;
+  border: 0.125rem solid #2563eb;
   border-radius: 4rem;
   font-size: 1.6rem;
   color: #f0f3fd;
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
-  box-shadow: 0 0 1rem #37a1f2;
+  box-shadow: 0 0 1rem #2563eb;
 }
 
 .btn:hover {
   background: transparent;
-  color: #37a1f2;
+  color: #2563eb;
   box-shadow: none;
 }
 
@@ -208,7 +208,7 @@ span {
 
 #dark-container .navbar a:hover,
 #dark-container .navbar a.destaque {
-  color: #37a1f2;
+  color: #2563eb;
 }
 
 #container,
@@ -234,7 +234,7 @@ span {
 
 .sobre-img img {
   width: 25vw;
-  border: 0.2rem solid #37a1f2;
+  border: 0.2rem solid #2563eb;
   border-radius: 5rem;
 }
 
@@ -300,7 +300,7 @@ span {
 }
 
 .formacoes-column .formacoes-box {
-  border-left: 0.2rem solid #37a1f2;
+  border-left: 0.2rem solid #2563eb;
 }
 
 .formacoes-box .formacoes-content {
@@ -315,14 +315,14 @@ span {
   left: -1.1rem;
   width: 2rem;
   height: 2rem;
-  background-color: #37a1f2;
+  background-color: #2563eb;
   border-radius: 50%;
 }
 
 .formacoes-content .content {
   position: relative;
   padding: 1.5rem;
-  border: 0.2rem solid #37a1f2;
+  border: 0.2rem solid #2563eb;
   border-radius: 0.6rem;
   margin-bottom: 2rem;
   overflow: hidden;
@@ -362,7 +362,7 @@ span {
 
 .formacoes-content .content .year {
   font-size: 1.5rem;
-  color: #37a1f2;
+  color: #2563eb;
   padding-bottom: 0.5rem;
 }
 
@@ -398,12 +398,12 @@ span {
 }
 
 .habilidades-container .habilidades-box:hover {
-  border-color: #37a1f2;
+  border-color: #2563eb;
   transform: scale(1.02);
 }
 
 #dark-container .habilidades-container .habilidades-box:hover {
-  border-color: #37a1f2;
+  border-color: #2563eb;
   transform: scale(1.02);
 }
 
@@ -417,7 +417,7 @@ span {
 
 .habilidades-container i {
   font-size: 5rem;
-  color: #37a1f2;
+  color: #2563eb;
 }
 
 .habilidades-box h3 {
@@ -444,7 +444,7 @@ span {
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem #37a1f2;
+  box-shadow: 0 0 1rem #2563eb;
   overflow: hidden;
   display: flex;
 }
@@ -464,7 +464,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #37a1f2);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #2563eb);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -581,13 +581,13 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
-  background: #37a1f2;
+  background: #2563eb;
   border-radius: 0.8rem;
   transition: 0.5s ease;
 }
 
 .footer-iconTop a:hover {
-  box-shadow: 0 0 1rem #37a1f2;
+  box-shadow: 0 0 1rem #2563eb;
 }
 
 .footer-iconTop a i {
