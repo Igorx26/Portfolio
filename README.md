@@ -2,7 +2,7 @@
 
 Meu primeiro portfólio
 
-Feito utilizado:
+Feito utilizando:
 
 <div>
     <img align="center" alt="JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
