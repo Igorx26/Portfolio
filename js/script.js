@@ -21,7 +21,7 @@ toggleIcons.forEach(toggle => {
       toggle.classList.remove('disabled')
     }, 2500)
 
-    
+
     icons.forEach(icon => {
       icon.classList.toggle('bx-sun')
     })
@@ -48,7 +48,7 @@ if (getTheme === 'dark') {
   icons.forEach(icon => {
     icon.classList.toggle('bx-sun')
   })
-  
+
 }
 
 // toggle icon navbar
@@ -121,7 +121,7 @@ const typed = new Typed('.multiple-text', {
   strings: ['Desenvolvedor Front-end'],
   typeSpeed: 100,
   backSpeed: 100,
-  backDelay: 1000,
+  backDelay: 1000000,
   loop: true
 })
 
