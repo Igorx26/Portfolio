@@ -121,7 +121,7 @@ const typed = new Typed('.multiple-text', {
   strings: ['Desenvolvedor Front-end'],
   typeSpeed: 100,
   backSpeed: 100,
-  backDelay: 1000000,
+  backDelay: 1000,
   loop: true
 })
 

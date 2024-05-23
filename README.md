@@ -19,4 +19,7 @@
 <p align="center">
     <img src="./Imgs/homeImg.png" alt="home" width="400px">
     <img src="./Imgs/habilidadesImg.png" alt="home" width="400px">
+    <img src="./Imgs/homeImgDark.png" alt="home" width="400px">
+    <img src="./Imgs/habilidadesImgDark.png" alt="home" width="400px">
 </p>
+
