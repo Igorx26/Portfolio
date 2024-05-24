@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-     <a href="https://portfolio-cyan-ten-54.vercel.app">Visite esse projeto</a>
+     <a href="https://portfolio-cyan-ten-54.vercel.app">Visite este projeto</a>
 </p>
 
 ## Imagens da página:
@@ -22,4 +22,3 @@
     <img src="./Imgs/homeImgDark.png" alt="home" width="400px">
     <img src="./Imgs/habilidadesImgDark.png" alt="home" width="400px">
 </p>
-
