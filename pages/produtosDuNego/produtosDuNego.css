@@ -133,7 +133,7 @@ span {
 
 .home-img img {
   width: 35vw;
-  border-radius: 0 10rem 0 10rem;
+  border-radius: 2rem;
   animation: floatImage 4s ease-in-out infinite;
 }
 
