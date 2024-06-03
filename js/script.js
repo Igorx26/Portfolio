@@ -9,9 +9,9 @@ cloneContainer.classList.remove('active')
 const toggleIcons = document.querySelectorAll('.toggle-icon')
 const icons = document.querySelectorAll('.toggle-icon i')
 const darkContainer = document.querySelector('#dark-container')
-const darkContainerImg = document.querySelector('#dark-container .home-img img')
+// const darkContainerImg = document.querySelector('#dark-container .home-img img')
 
-darkContainerImg.src = '/Imgs/imgDark.png'
+// darkContainerImg.src = '/Imgs/imgDark.png'
 
 toggleIcons.forEach(toggle => {
   toggle.addEventListener('click', () => {
