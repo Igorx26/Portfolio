@@ -114,7 +114,7 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .habilidades-container, .portfolio-box, .formacoes', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .sobre-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .sobre-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content p, .sobre-content', { origin: 'top' });
 
 // typed js
 const typed = new Typed('.multiple-text', {

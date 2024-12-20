@@ -395,6 +395,7 @@ span {
   text-align: center;
   border: 0.2rem solid #f0f3fd;
   transition: 0.5s ease;
+  max-width: 60rem;
 }
 
 .habilidades-container .habilidades-box:hover {
