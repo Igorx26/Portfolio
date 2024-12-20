@@ -118,7 +118,7 @@ ScrollReveal().reveal('.home-content p, .sobre-content', { origin: 'right' });
 
 // typed js
 const typed = new Typed('.multiple-text', {
-  strings: ['Desenvolvedor Front-end'],
+  strings: ['Desenvolvedor Frontend'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
@@ -126,7 +126,7 @@ const typed = new Typed('.multiple-text', {
 })
 
 const typeds = new Typed('#dark-container .multiple-text', {
-  strings: ['Desenvolvedor Front-end'],
+  strings: ['Desenvolvedor Frontend'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
