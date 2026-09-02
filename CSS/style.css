@@ -117,7 +117,7 @@ span {
   color: #2563eb;
 }
 
-.home-content p{
+.home-content p {
   font-size: 2rem;
 }
 
@@ -252,7 +252,8 @@ span {
   font-size: 2.5rem;
 }
 
-.sobre-content p, li {
+.sobre-content p,
+li {
   font-size: 1.8rem;
   margin: 1.5rem 0;
 }
@@ -264,7 +265,7 @@ span {
 .habilidades-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -409,10 +410,12 @@ span {
 }
 
 #dark-container .habilidades-container .habilidades-box {
+  border: 0.2rem solid #15202b;
   background-color: rgba(0, 0, 0, 0.458);
 }
 
 .container .habilidades-container .habilidades-box {
+  border: 0.2rem solid #f0f3fd;
   background-color: rgba(0, 0, 0, 0.066);
 }
 
@@ -700,4 +703,19 @@ input::-webkit-inner-spin-button {
   100% {
     opacity: 1;
   }
+}
+
+#dark-container .habilidades-container .habilidades-box,
+.container .habilidades-container .habilidades-box {
+  flex: 1 1 30rem;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  transition: 0.5s ease;
+  max-width: 60rem;
+  /* O Flex interno garante que os textos comecem na mesma linha */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
