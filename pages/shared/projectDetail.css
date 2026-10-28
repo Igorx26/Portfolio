@@ -1,0 +1,381 @@
+/* ==========================================================================
+   PÁGINAS DE DETALHES DE PROJETOS - SEÇÃO HERO
+   Estilos compartilhados entre as páginas de projetos (pages/*).
+   Deve ser carregado DEPOIS do CSS específico da página.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tokens de tema
+   O tema escuro é um clone do #container (ver js/script.js), por isso os
+   tokens são definidos por id para que cada tema tenha sua própria paleta.
+   -------------------------------------------------------------------------- */
+#container {
+  --hero-accent: #2563eb;
+  --hero-accent-hover: #1d4ed8;
+  --hero-text-strong: #0f172a;
+  --hero-text-muted: #475569;
+  --hero-surface: rgba(255, 255, 255, 0.72);
+  --hero-surface-solid: #ffffff;
+  --hero-border: rgba(15, 23, 42, 0.08);
+  --hero-bar: #f1f5f9;
+  --hero-url-bg: #ffffff;
+  --hero-badge-bg: rgba(37, 99, 235, 0.08);
+  --hero-badge-border: rgba(37, 99, 235, 0.18);
+  --hero-badge-text: #1d4ed8;
+  --hero-outline-text: #2563eb;
+  --hero-eyebrow: #2563eb;
+  --hero-shadow-color: 15, 23, 42;
+}
+
+#dark-container {
+  --hero-accent: #2563eb;
+  --hero-accent-hover: #3b82f6;
+  --hero-text-strong: #f8fafc;
+  --hero-text-muted: #a5b4c8;
+  --hero-surface: rgba(255, 255, 255, 0.04);
+  --hero-surface-solid: #1b2836;
+  --hero-border: rgba(255, 255, 255, 0.08);
+  --hero-bar: #223243;
+  --hero-url-bg: #15202b;
+  --hero-badge-bg: rgba(37, 99, 235, 0.16);
+  --hero-badge-border: rgba(96, 165, 250, 0.28);
+  --hero-badge-text: #93c5fd;
+  --hero-outline-text: #93c5fd;
+  --hero-eyebrow: #60a5fa;
+  --hero-shadow-color: 0, 0, 0;
+}
+
+/* --------------------------------------------------------------------------
+   Layout
+   -------------------------------------------------------------------------- */
+.project-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(4rem, 6vw, 9rem);
+  min-height: 100vh;
+  min-height: 100dvh;
+  /* Mantém o alinhamento com o header (9%) e limita a largura em telas muito grandes */
+  padding-block: 14rem 8rem;
+  padding-inline: max(9%, calc((100% - 136rem) / 2));
+}
+
+/* --------------------------------------------------------------------------
+   Imagem do projeto (browser mockup)
+   -------------------------------------------------------------------------- */
+.browser-mockup {
+  border-radius: 1.6rem;
+  overflow: hidden;
+  background: var(--hero-surface-solid);
+  border: 1px solid var(--hero-border);
+  box-shadow:
+    0 1px 2px rgba(var(--hero-shadow-color), 0.06),
+    0 12px 24px -12px rgba(var(--hero-shadow-color), 0.18),
+    0 32px 64px -24px rgba(37, 99, 235, 0.35);
+  transition:
+    scale 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.browser-mockup:hover {
+  scale: 1.02;
+  box-shadow:
+    0 1px 2px rgba(var(--hero-shadow-color), 0.06),
+    0 20px 40px -16px rgba(var(--hero-shadow-color), 0.22),
+    0 44px 80px -24px rgba(37, 99, 235, 0.45);
+
+  @media (prefers-reduced-motion: reduce) {
+    scale: none;
+  }
+}
+
+.browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.2rem 1.6rem;
+  background: var(--hero-bar);
+  border-bottom: 1px solid var(--hero-border);
+}
+
+.browser-bar .browser-dot {
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+
+.browser-dot:nth-child(1) {
+  background: #ff5f57;
+}
+
+.browser-dot:nth-child(2) {
+  background: #febc2e;
+}
+
+.browser-dot:nth-child(3) {
+  background: #28c840;
+}
+
+.browser-bar .browser-url {
+  flex: 1;
+  min-width: 0;
+  max-width: 36rem;
+  margin-inline: auto;
+  padding: 0.4rem 1.2rem;
+  border-radius: 99rem;
+  background: var(--hero-url-bg);
+  color: var(--hero-text-muted);
+  font-size: 1.2rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.browser-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Bloco de texto
+   -------------------------------------------------------------------------- */
+.project-info {
+  padding: clamp(2.8rem, 4vw, 4.8rem);
+  border-radius: 2.4rem;
+  background: var(--hero-surface);
+  border: 1px solid var(--hero-border);
+  box-shadow: 0 24px 56px -28px rgba(var(--hero-shadow-color), 0.22);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.project-logo {
+  flex-shrink: 0;
+  width: 7.2rem;
+  height: 7.2rem;
+  object-fit: contain;
+  border-radius: 25%;
+  background: #ffffff;
+  box-shadow: 0 8px 20px -8px rgba(var(--hero-shadow-color), 0.3);
+}
+
+.project-header .project-eyebrow {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--hero-eyebrow);
+}
+
+.project-title {
+  font-size: clamp(3rem, 2rem + 1.6vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--hero-text-strong);
+}
+
+.project-description {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  color: var(--hero-text-muted);
+}
+
+.project-description + .project-description {
+  margin-top: 1.6rem;
+}
+
+.project-description b {
+  font-weight: 600;
+  color: var(--hero-text-strong);
+}
+
+/* --------------------------------------------------------------------------
+   Tecnologias (badges)
+   -------------------------------------------------------------------------- */
+.tech-stack {
+  margin-block: 2.8rem;
+}
+
+.tech-stack-title {
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--hero-text-muted);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+}
+
+.tech-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 99rem;
+  background: var(--hero-badge-bg);
+  border: 1px solid var(--hero-badge-border);
+  color: var(--hero-badge-text);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.tech-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   Call-to-action
+   -------------------------------------------------------------------------- */
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 3.2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.3rem 2.4rem;
+  border-radius: 1.2rem;
+  border: 2px solid var(--hero-accent);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    translate 0.3s ease;
+}
+
+.btn i {
+  font-size: 2rem;
+}
+
+.btn:hover {
+  translate: 0 -3px;
+  box-shadow: 0 12px 24px -10px rgba(37, 99, 235, 0.6);
+
+  @media (prefers-reduced-motion: reduce) {
+    translate: none;
+  }
+}
+
+.btn:active {
+  translate: 0 0;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--hero-accent);
+  outline-offset: 3px;
+}
+
+.btn-primary {
+  background: var(--hero-accent);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--hero-accent-hover);
+  border-color: var(--hero-accent-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--hero-outline-text);
+}
+
+.btn-outline:hover {
+  background: var(--hero-accent);
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   Responsividade
+   -------------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+  .project-hero {
+    gap: 4rem;
+    padding-inline: 5%;
+  }
+}
+
+/* Tablet e mobile: imagem empilhada acima do texto */
+@media (max-width: 990px) {
+  .project-hero {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: center;
+    gap: 4rem;
+    padding-block: 12rem 6rem;
+    padding-inline: 5%;
+  }
+
+  .project-media,
+  .project-info {
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-hero {
+    gap: 3rem;
+    padding-block: 10rem 4rem;
+    padding-inline: 4%;
+  }
+
+  .browser-mockup {
+    border-radius: 1.2rem;
+  }
+
+  .browser-bar {
+    padding: 1rem 1.2rem;
+  }
+
+  .browser-bar .browser-dot {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .project-info {
+    border-radius: 2rem;
+  }
+
+  .project-logo {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .project-actions .btn {
+    flex: 1 1 100%;
+  }
+}

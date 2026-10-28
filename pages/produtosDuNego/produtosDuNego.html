@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="produtosDuNego.css" />
+    <link rel="stylesheet" href="../shared/projectDetail.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../Imgs/icon.ico" type="image/x-icon" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Projeto Produtos Du Nego" />
@@ -40,35 +41,85 @@
         <i class="bx bx-menu" id="menu-icon"></i>
       </header>
 
-      <section class="home" id="home">
-        <div class="home-img">
-          <img src="assets/pageImg3.png" />
+      <section class="project-hero" id="home">
+        <div class="project-media">
+          <div class="browser-mockup">
+            <div class="browser-bar" aria-hidden="true">
+              <span class="browser-dot"></span>
+              <span class="browser-dot"></span>
+              <span class="browser-dot"></span>
+              <span class="browser-url">produtosdunego.vercel.app</span>
+            </div>
+            <img
+              src="assets/pageImg3.png"
+              alt="Página inicial do cardápio digital Produtos Du Nego"
+              width="715"
+              height="446"
+            />
+          </div>
         </div>
 
-        <div class="home-content">
-          <img src="assets/Logo Produtos du Nego.png" alt="Logo" />
-          <h3>Produtos Du Nego</h3>
+        <div class="project-info">
+          <div class="project-header">
+            <img
+              class="project-logo"
+              src="assets/Logo Produtos du Nego.png"
+              alt="Logo Produtos Du Nego"
+              width="72"
+              height="72"
+            />
+            <div>
+              <span class="project-eyebrow">Projeto</span>
+              <h1 class="project-title">Produtos Du Nego</h1>
+            </div>
+          </div>
 
-          <p>Site cardápio digital, baseado na loja do meu pai, focado em exibir o catálogo de produtos e preços.</p>
-          <br />
-          <p>Feito com <b>HTML, Tailwind CSS e JavaScript</b>.</p>
-          <br />
-          <p>
+          <p class="project-description">
+            Site cardápio digital, baseado na loja do meu pai, focado em exibir o catálogo de produtos e preços.
+          </p>
+          <p class="project-description">
             O projeto foi atualizado e simplificado a pedido do cliente: o sistema de carrinho de compras foi removido,
             transformando a página em uma vitrine prática que direciona o usuário para o atendimento direto via
             WhatsApp.
           </p>
 
-          <div class="external-link">
-            <a href="https://github.com/Igorx26/ProdutosDuNego" target="_blank"><i class="bx bxl-github"></i></a>
-            <a href="https://produtosdunego.vercel.app" target="_blank"><i class="bx bx-link-external"></i></a>
+          <div class="tech-stack">
+            <h2 class="tech-stack-title">Tecnologias</h2>
+            <ul class="tech-list">
+              <li>
+                <svg class="tech-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+                HTML
+              </li>
+              <li>
+                <svg class="tech-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg>
+                Tailwind CSS
+              </li>
+              <li>
+                <svg class="tech-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+                JavaScript
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://produtosdunego.vercel.app" target="_blank" rel="noopener noreferrer">
+              <i class="bx bx-link-external" aria-hidden="true"></i> Ver projeto
+            </a>
+            <a
+              class="btn btn-outline"
+              href="https://github.com/Igorx26/ProdutosDuNego"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bx bxl-github" aria-hidden="true"></i> Código no GitHub
+            </a>
           </div>
         </div>
       </section>
 
       <footer class="footer">
         <div class="footer-text">
-          <p>Copyright &copy; 2024 by Igor | All Rights Reserved.</p>
+          <p>Copyright &copy; 2026 by Igor Martins Silva</p>
         </div>
       </footer>
 

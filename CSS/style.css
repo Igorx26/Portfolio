@@ -455,6 +455,9 @@ li {
 
 .portfolio-box img {
   width: 100%;
+  aspect-ratio: 3 / 2; /* padroniza a altura dos cards, independente da proporção da imagem */
+  object-fit: cover;
+  object-position: top left;
   transition: 0.5s ease;
 }
 
